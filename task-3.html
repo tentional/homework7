@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/style.css ">
+   <title>Завдання 10</title>
+</head>
+<body>
+   <script>
+      //Задача 10. Дано покази температур (довільна кількість). Розробити функцію, яка дозволить знайти середнє значення для додатних показів температури.
+        
+				function getNegativeTemperature(num1) {
+					positiveIndexNum = 0
+					for (let i = 1; i <= num1; i++) {
+						let temperatureReadings = parseFloat(prompt(`Введіть показник #${i}`))
+						if (temperatureReadings > 0)
+							positiveIndexNum += temperatureReadings
+					}
+					return document.write(`Cереднє значення додатних показів температури = ${positiveIndexNum / num1}`)
+				}
+				const measurementsNumber = parseInt(prompt('Введіть кількість замірів температури'))
+				getNegativeTemperature(measurementsNumber)
+				
+			
+   </script>
+</body>
+</html>
